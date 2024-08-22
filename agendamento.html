@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica Bem-Estar</title>
+</head>
+<body>
+    <main>
+        <h1>Agendamento de Consulta</h1>
+        <form action="">
+            <fieldset>
+                <legend>
+                    Informações Pessoais
+                </legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo" required><br>
+                <label for="email">Endereço de Email:</label>
+                <input type="email" id="email" placeholder="Digite seu endereço de email" required><br>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" placeholder="Digite seu telefone" required><br>
+                <label for="idade">Idade:</label>
+                <input type="text" id="idade" required><br>
+                <label for="especialidade">Especialidade Médica:</label>
+                <select name="especialidade" id="especialidade" required>
+                    <option value="">Selecione uma especialidade</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="ginecologia">Ginecologia</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Preferências de Horário
+                </legend>
+                <label for="data">Data Preferencial:</label>
+                <input type="date" name="data" id="data" required><br>
+                <label for="horas">Horário Preferencial:</label>
+                <input type="time" name="horarario" id="horas" required>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Observações Adicionais
+                </legend>
+                <textarea name="observacoes" id="obs" cols="25" rows="3" placeholder="Digite aqui suas observações"></textarea>
+            </fieldset>
+            <input type="submit" value="Agendar Consulta">
+        </form>
+    </main>
+</body>
+</html>
